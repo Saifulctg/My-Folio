@@ -126,14 +126,17 @@ h2 {
    -ms-transition: all .4s;
    -o-transition: all .4s;
 }
-
+#banner .slideItem .bannerContant .bannerBtn:focus{
+   outline: 0;
+}
 #banner .slideItem .bannerContant .bannerBtn:hover {
    border-radius: 10px;
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    -ms-border-radius: 10px;
    -o-border-radius: 10px;
-   background: #02918c
+   background: #02918c;
+   color: #fff;
 }
 
 .bannerDots {
@@ -156,7 +159,7 @@ h2 {
    border: none;
    color: transparent;
    cursor: pointer;
-   width: 5px;
+   width: 3px;
    height: 3px;
    background-color: #02918c;
    border-radius: 20px;
@@ -170,7 +173,9 @@ h2 {
    -ms-transition: all .7s;
    -o-transition: all .7s;
 }
-
+.bannerDots li button:focus{
+   outline: 0;
+}
 .bannerDots .slick-active button {
    width: 30px;
    transform: scale(1);
@@ -209,7 +214,7 @@ h2 {
 }
 
 #about .aboutItem {
-   padding: 120px 45px 155px;
+   padding: 100px 45px 140px;
 }
 #about .aboutItem i {
    font-size: 35px;
@@ -229,7 +234,6 @@ h2 {
    color: #7e8287;
    line-height: 21px;
 }
-
 /* About Css End */
 
 /* Service Css Start */
@@ -237,7 +241,6 @@ h2 {
    background-image: url(../images/banner-2.jpg);
    background-position: center;
    background-size: cover;
-   height: 730px;
 }
 #service .serviceContant h2{
    padding: 60px 0 20px;
@@ -266,7 +269,190 @@ h2 {
    color: #7e8287;
    line-height: 21px;
 }
+#service .serviceItem:last-child{
+   padding-bottom: 20px;
+}
 /* Service Css End */
 
-/* Common Css Start */
-/* Common Css End */
+/* Work Css Start */
+#work .workContant{
+   position: relative;
+}
+#work .workContant h2{
+   padding: 95px 0 10px;
+}
+#work .workContant p{
+   font-size: 16px;
+   color: #7e8287;
+   line-height: 41px;
+   padding-bottom: 50px;
+}
+#work .workItem img{
+   width: 100%;
+   height: 100%;
+}
+#work .workItem .workOverly a{
+   font-size: 16px;
+   color: #fff;
+   font-weight: 800;
+   display: inline-block;
+   padding: 15px 0;
+}
+#work .workItem .workOverly p {
+   font-size: 13px;
+   color: #fff;
+   line-height: 21px;
+}
+#work .workItem .workOverly{
+   background-color: rgba(2, 145, 140,.85);
+   padding: 55px 38px;
+   position: absolute;
+   top: 21px;
+   left: 28px;
+   right: 28px;
+   bottom: 21px;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(0);
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -ms-transform: scale(0);
+   -o-transform: scale(0);
+   transition: all .6s;
+   -webkit-transition: all .6s;
+   -moz-transition: all .6s;
+   -ms-transition: all .6s;
+   -o-transition: all .6s;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+#work .workItem:hover .workOverly{
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   -o-transform: scale(1);
+   border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   -ms-border-radius: 0;
+   -o-border-radius: 0;
+}
+/* Work Css End */
+
+/* Contact Css Start */
+#contact .contactContant h2{
+   padding: 95px 0 10px;
+}
+#contact .contactContant p{
+   font-size: 16px;
+   color: #7e8287;
+   line-height: 41px;
+   padding-bottom: 50px;
+}
+#contact .contactForm{
+   background-color: #0b0b0b;
+}
+#contact .contactForm .formInput{
+   width: 100%;
+   font-size: 16px;
+   color: #7e8287;
+   line-height: 41px;
+   text-transform: uppercase;
+   background: none;
+   border: none;
+   text-align: center; 
+   border-bottom: 1px solid #7e8287;
+   padding-top: 50px;
+}
+#contact .contactForm .formInput:focus{
+   outline: 0;
+}
+#contact .contactForm textarea.formInput{
+   resize: none;
+   height: 95px;
+}
+#contact .contactForm button.formBtn{
+   font-family: sans-serif;
+   font-size: 14px;
+   font-weight: 800;
+   letter-spacing: 1px;
+   color: #0b1016;
+   background-color: #cfc91d;
+   text-transform: uppercase;
+   border: none;
+   padding: 12px 40px;
+   margin-top: 50px;
+   transition: all .5s;
+   -webkit-transition: all .5s;
+   -moz-transition: all .5s;
+   -ms-transition: all .5s;
+   -o-transition: all .5s;
+}
+#contact .contactForm button.formBtn:focus{
+   outline: 0;
+}
+#contact .contactForm button.formBtn:hover{
+   color: #fff;
+   background-color: #02918c;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}
+/* Contact Css End */
+
+/* Footer Css Start */
+#footervar{
+   background-color: #000;
+}
+#footervar p{
+   font-size: 12px;
+   color: #7e8287;
+   line-height: 41px;
+}
+/* Footer Css End */
+
+/* Back To Top Button Start */
+
+
+.backToTop{
+   width: 50px;
+   height: 50px;
+   color: #02918c;
+   text-align: center;
+   font-size: 25px;
+   box-shadow: inset 0 0 5px 5px rgb(167, 167, 167);
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   cursor: pointer;
+   border: none;
+   z-index: 9999;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+   letter-spacing: -5px;
+   transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+}
+.backToTop:hover{
+   background: #fff;
+   color: #000;
+}
+button:focus {
+   outline: 0;
+}
+
+/* Back To Top Button Css End */

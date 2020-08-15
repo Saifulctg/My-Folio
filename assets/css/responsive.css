@@ -3,6 +3,11 @@
         font-size: 43px;
     }
 }
+@media (max-width: 576.98px){
+    h2{
+        font-size: 38px;
+    }
+}
 /* Banner Css Start  */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     #banner .slideItem{
@@ -112,6 +117,9 @@
     }
 }
 @media (max-width: 575.98px) { 
+    #about .aboutContant h2{
+        padding: 70px 0 10px;
+    }
     #about .aboutContant p{
         font-size: 14px;
         line-height: 30px;
@@ -119,9 +127,83 @@
     #about .aboutContant span{
         font-size: 20px;
     }
-    #about .aboutItem{
-        padding-top: 50px;
+    #about .aboutItem {
+        padding: 25px 45px;
+     }
+     #about .fristItem {
+         padding-top: 50px;
+     }
+     #about .lastItem {
         padding-bottom: 50px;
     }
 }
 /* About Css End */
+/* Service Css Start */
+@media (max-width: 575.98px){
+    #service .serviceContant p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    #service .lastItem p{
+        padding-bottom: 20px;
+    }
+}
+/* Service Css End */
+
+/* Work Css Start */
+@media (min-width: 768px) and (max-width: 1199.98px){
+    #work .workItem .workOverly a{
+        font-size: 14px;
+        padding: 0 0 8px;
+     }
+     #work .workItem .workOverly p {
+        font-size: 11px;
+        line-height: 18px;
+     }
+    #work .workItem .workOverly{
+        padding: 25px 18px;
+    }
+}
+@media (min-width: 577px) and (max-width: 767.98px){
+    #work .workItem .workOverly{
+        padding: 25px 18px;
+    }
+}
+@media (max-width: 575.98px){
+    #work .workContant h2{
+        padding: 70px 0 10px;
+    }
+    #work .workContant p{
+        font-size: 14px;
+        line-height: 30px;
+        padding-bottom: 50px;
+     }
+     #work .workItem .workOverly{
+        padding: 35px 18px;
+    }
+}
+
+/* Work Css End */
+
+/* Contact Css Start */
+@media (min-width: 577px) and (max-width: 767.98px){
+    #contact .contactForm .formBtn{
+        padding: 10px 30px;
+    }  
+ }
+@media (max-width: 575.98px){
+    #contact .contactContant h2{
+        padding: 70px 0 10px;
+    }
+    #contact .contactContant p{
+        font-size: 14px;
+        line-height: 30px;
+        padding-bottom: 50px;
+     }
+    #contact .contactForm .formBtn{
+        font-size: 10px;
+        padding: 10px 40px;
+        margin-top: 50px;
+     }
+}
+/* Contact Css End */
